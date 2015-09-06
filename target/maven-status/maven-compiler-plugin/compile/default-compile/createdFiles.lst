@@ -1,0 +1,6 @@
+com\shinchan\ssm\domain\User.class
+com\shinchan\ssm\controller\UserController.class
+com\shinchan\ssm\utils\MysqlJDBC.class
+com\shinchan\ssm\dao\UserDao.class
+com\shinchan\ssm\service\impl\UserServiceImpl.class
+com\shinchan\ssm\service\UserService.class
