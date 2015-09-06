@@ -10,8 +10,6 @@
 	<sql id="Base_Column_List">
 		id, name, age, phone
 	</sql>
-	<select id="selectByPrimaryKey" resultMap="BaseResultMap"
-		parameterType="java.lang.Integer">
 		select
 		<include refid="Base_Column_List" />
 		from user
@@ -22,8 +20,7 @@
 		where id = #{id,jdbcType=INTEGER}
 	</delete>
 	<insert id="insert" parameterType="com.shinchan.ssm.domain.User">
-		insert into user (id, name, age,
-		phone)
+		insert into user (id, name, age, phone)
 		values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR},
 		#{age,jdbcType=INTEGER},
 		#{phone,jdbcType=VARCHAR})
